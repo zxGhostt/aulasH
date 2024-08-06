@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+<head>//cabeça
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
 </head>
 
-<body>
+<body>//corpo
     <form action="recebeDados.php" method="get">
        
-        <fieldset>
+        <fieldset>//tipa uma area que se parece com uma tabela
 
             <legend>Meu Formulario</legend>
 
             <p>
                 <label for="nome">Nome: </label>
                 <input type="text" name="nome" required placeholder="Informe seu nome" size="30">
+                //required = serve para informa o usuario que essa info e precisa para continuar
+                //label = é um espaço que nele sera ultilizado para digitar
             </p>
             
             <p>
                 <label for="cpf">CPF</label>
                 <input type="text" name="cpf" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" 
                 title="Informe o CPF corretamente seguindo: xxx.xxx.xxx-xx" 
-                maxlength="14" placeholder="Informe seu CPF" size="30">
+                maxlength="14" placeholder="Informe seu CPF" size="30"> //size = tamanho do espaço de digitação 
+                //pattern = serve para colocar o cpf corretamente
+                //maxlength = pode limitar o tanto de caracteris no espaço
+                //title = serve para adicionar um texto ao espaço de digitação 
             </p>
 
             <P>
@@ -32,6 +37,7 @@
 
             <p>
                 <input type="submit" value="enviar">
+                //submit = é um botão 
             </p>
 
         </fieldset>
